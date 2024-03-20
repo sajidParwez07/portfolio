@@ -1,0 +1,77 @@
+.skill{
+  font-weight: bolder;
+}
+
+.val {
+  float: right;
+  font-style: normal;
+  font-weight: bolder;
+
+}
+
+
+.progress {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 20px !important;
+  box-shadow: none;
+  border: 1px solid black;
+  overflow: visible !important;
+}
+
+.progress-bar{
+  background: #a11212;
+}
+
+.progress .progress-bar {
+  animation: animate-positive 2s;
+  position: relative;
+  box-shadow: none;
+  border-radius: 20px !important;
+}
+
+.progress .progress-bar:after {
+  position: absolute;
+  bottom: 0;
+  background-color: #F51008;
+  height: 100%;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid black;
+  right: -15px;
+}
+
+.progress.green .progress-bar:after {
+  background-color: #13D73E;
+}
+
+.progress.blue .progress-bar:after {
+  background-color: #679EF7;
+}
+
+.progress.yellow .progress-bar:after {
+  background-color: #F0C808;
+}
+
+.progress .progress-value {
+  position: absolute;
+  padding: 3px 7px;
+  top: -50px;
+  right: -20px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #000000;
+  display: block;
+}
+
+@-webkit-keyframes animate-positive {
+  0% {
+      width: 0%;
+  }
+}
+
+@keyframes animate-positive {
+  0% {
+      width: 0%;
+  }
+}
